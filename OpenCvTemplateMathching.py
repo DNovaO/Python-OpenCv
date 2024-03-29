@@ -12,7 +12,7 @@ methods = [cv2.TM_CCOEFF, cv2.TM_CCOEFF_NORMED, cv2.TM_CCORR,
 
 for method in methods:
     img2 = img.copy()
-
+    
     # Perform convolution using matchTemplate method
     # This involves sliding the template over the image and comparing the template with each section of the image
     # The resulting 2d array will be composed by this --> (W - w + 1, H - h + 1)
